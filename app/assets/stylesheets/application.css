@@ -13,3 +13,173 @@
  *= require_tree .
  *= require_self
  */
+
+html, body {
+  background: #fafafa;
+}
+
+body {
+  height: 100%;
+}
+
+.App {
+  margin-top: 76px;
+  text-align: center;
+  background: #fafafa; /*light-grey*/
+}
+
+.App-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0px 0px 8px #9e9e9e;
+  height: 75px;
+  color: white;
+}
+
+.brand-name {
+  padding-left: 30px;
+}
+
+nav{
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  right: 0;
+  margin-right: 30px;
+  min-width: 200px;
+}
+
+li {
+  text-decoration: none !important;
+  display: inline-block;
+  /*padding: 15px;*/
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+  padding-right: 15px;
+}
+
+.nav-item{
+  padding: 33px 15px 23px 15px;
+  transition: all .5s;
+  font-weight: bold;
+  line-height: 3rem;
+  margin-right: 15px;
+}
+
+.nav-cart{
+  transition: all .5s;
+  font-size: 40px;
+  padding: 28px 15px 18px 15px;
+  margin: auto;
+}
+
+.nav-item:hover {
+  background-color: #e0e0e0; /*grey*/
+  color: white;
+  border-bottom: 2px solid #2196f3; /*materialize blue*/
+}
+
+.cart-img {
+  width: 40px;
+  transition: all .5s;
+  padding: -1px 15px 18px 15px;
+}
+.cart-img:hover {
+  width: 45px;
+}
+
+.count {
+  border-radius: 100%;
+  background: lightgrey;
+  width: 2rem;
+  height: 1rem;
+  color: black;
+  font-weight: bold;
+  padding-top: 5px;
+  padding-bottom: 7px;
+  margin: auto;
+}
+
+
+@keyframes font-size {
+  from {font-size: 0px;}
+  to {font-size: 16px;}
+}
+
+.App-intro {
+  font-size: large;
+}
+
+
+#header-home {
+  color: white;
+  float: right;
+  margin-top: 1em;
+  margin-right: 20%;
+}
+
+/*HOME COMPONENT*/
+
+#candle-home{
+  /*background-image: url("/images/candle.jpg");*/
+  background-attachment: fixed;
+  z-index: -1;
+  width: 100%;
+  /*height: 500px;*/
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-position:center;
+}
+
+.candle-container {
+  margin: 15px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.candle-item {
+  margin: 10px;
+  box-shadow: 0px 0px 5px #e0e0e0;
+  background: white;
+  transition: box-shadow .25s;
+  min-width: 275px;
+}
+
+.candle-item:hover {
+  box-shadow: 0px 0px 12px #607d8b; /*materialize blue-grey*/
+  background: white;
+}
+
+.candle-image {
+  min-width: 100%;
+}
+
+.add-button {
+  width: 66%;
+  height: 40px;
+  background-color: #c62828; /*red-darken-3*/
+  transition: background-color .25s;
+  margin-bottom: 2em;
+  border: none;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: bold;
+  color: white;
+}
+.add-button:hover {
+  background-color: #ef5350; /*red-ligthen-1*/
+}
+
+.no-candles {
+  margin-top: 100px;
+}
+
+
